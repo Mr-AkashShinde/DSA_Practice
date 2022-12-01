@@ -7,6 +7,9 @@ public:
             if(nums[i]==target){
                 sum.push_back(i);
             }
+            if(nums[i]>target){
+                break;
+            }
         }
         return sum;
     }
